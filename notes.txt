@@ -1,0 +1,12 @@
+TODO:
+- read about capybara (https://github.com/jnicklas/capybara)
+
+Steps:
+- rails new <project_name> --skip-test-unit
+- update gem file
+- bundle install --without production
+- rails generate rspec:install
+- git init
+- git add .
+- git commit -m "Initial commit"
+- update README??
