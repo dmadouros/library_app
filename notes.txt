@@ -1,12 +1,59 @@
 TODO:
 - read about capybara (https://github.com/jnicklas/capybara)
+- learn about Markdown
 
 Steps:
-- rails new <project_name> --skip-test-unit
+$ rails new <project_name> --skip-test-unit
 - update gem file
-- bundle install --without production
-- rails generate rspec:install
-- git init
-- git add .
-- git commit -m "Initial commit"
+$ bundle install --without production
+$ rails generate rspec:install
+$ git init
+$ git add .
+$ git commit -m "Initial commit"
 - update README??
+- push to github
+- create new repo @ github
+$ git remote add origin git@github.com:<username>/<appname>.git
+$ git push -u origin master
+- push to heroku
+$ heroku create --stack cedar
+$ git push heroku master
+$ bundle install --without production --binstubs=./bundler_stubs
+- update .gitignore
+$ bundle install --binstubs=./bundler_stubs
+
+Rails Commands:
+$ rails g(enerate) <controller_name> <action(s)> --no-test-framework
+$ rails destroy <controller_name>
+$ rails g(enerate) <model_name> <attribute:type>
+$ rake db:migrate
+$ rake db:rollback
+$ rails g(enerate) integration_test <controller_name>
+
+Use Cases:
+User
+  username
+  password
+Book
+  author(s)
+  pages
+  publisher
+  title
+Location
+  name
+Borrower
+  firstname
+  lastname
+Owner
+  firstname
+  lastname
+Author
+  firstname
+  lastname
+
+Admin can add book
+Admin can loan book
+Admin can return book
+Admin can edit book
+Admin can remove book
+Admin can list books
