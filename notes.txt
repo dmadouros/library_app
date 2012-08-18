@@ -32,6 +32,7 @@ $ rails g(enerate) integration_test <controller_name>
 $ annotate
 $ rails console --sandbox
 $ rake db:test:prepare
+$ rake db:reset
 
 Use Cases:
 User
