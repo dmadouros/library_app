@@ -29,6 +29,9 @@ $ rails g(enerate) <model_name> <attribute:type>
 $ rake db:migrate
 $ rake db:rollback
 $ rails g(enerate) integration_test <controller_name>
+$ annotate
+$ rails console --sandbox
+$ rake db:test:prepare
 
 Use Cases:
 User
@@ -57,3 +60,14 @@ Admin can return book
 Admin can edit book
 Admin can remove book
 Admin can list books
+
+----
+Validations:
+- presence
+- length
+- format
+- uniqueness
+- confirmation
+
+----
+http://www.rubular.com/
